@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050505" />
+  <title>Blyns OS 1.0 — Boot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body data-page="boot">
+  <main id="os" aria-label="Blyns OS Boot">
+    <!-- =========================================================
+         BOOT SCREEN
+         Entry page. Boot animation runs for 3 seconds.
+         Edit the logo and loading bar here.
+         ========================================================= -->
+    <section id="boot-screen" class="screen boot-screen active" aria-label="Blyns OS is starting">
+      <div class="boot-content">
+        <img
+          class="boot-logo"
+          src="https://i.postimg.cc/Pxv27fKS/Blyns-OS-Logo.png"
+          alt="Blyns OS logo"
+        />
+        <div class="boot-progress" aria-label="Loading">
+          <div class="boot-progress-fill"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

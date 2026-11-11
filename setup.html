@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050505" />
+  <title>Blyns OS 1.0 — Setup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body data-page="setup">
+  <main id="os" aria-label="Blyns OS Setup">
+    <!-- =========================================================
+         SETUP SCREEN
+         All 10 first-time setup steps live on this page.
+         Edit the wallpaper, setup frame and setup content here.
+         ========================================================= -->
+    <section id="setup-screen" class="screen setup-screen active" aria-label="Blyns OS setup">
+      <div class="setup-wallpaper" aria-hidden="true"></div>
+      <div class="setup-shade" aria-hidden="true"></div>
+
+      <section class="setup-card" aria-live="polite">
+        <div class="setup-topline">
+          <span class="setup-brand">BLYNS OS <span>1.0</span></span>
+          <span class="step-counter" id="step-counter">1 / 10</span>
+        </div>
+
+        <div class="step-track" aria-hidden="true">
+          <div class="step-track-fill" id="step-track-fill"></div>
+        </div>
+
+        <div id="step-content" class="step-content"></div>
+
+        <div class="setup-footer" id="setup-footer">
+          <button id="back-button" class="back-button" type="button" hidden>Back</button>
+          <button id="continue-button" class="continue-button" type="button">Continue <span aria-hidden="true">→</span></button>
+        </div>
+        <p class="setup-error" id="setup-error" role="alert"></p>
+      </section>
+    </section>
+
+    <!-- WELCOME PAGE / TRANSITION AFTER ACCOUNT SETUP -->
+    <section id="welcome-screen" class="screen welcome-screen" aria-label="Welcome to Blyns OS" hidden>
+      <div class="welcome-content">
+        <p id="welcome-hello" class="welcome-hello">Hello...</p>
+        <p id="welcome-subtitle" class="welcome-subtitle">Welcome to</p>
+        <img
+          class="welcome-logo"
+          src="https://i.postimg.cc/Dy8SsWjX/Blyns-OS-Logo.png"
+          alt="Blyns OS"
+        />
+      </div>
+    </section>
+  </main>
+</body>
+</html>
